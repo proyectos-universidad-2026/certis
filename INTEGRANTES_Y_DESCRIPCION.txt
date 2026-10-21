@@ -1,0 +1,35 @@
+==============================================================
+ PROYECTO: CertiBot - Sistema Inteligente de Emisión
+           Automática de Certificados Académicos
+ EVALUACIÓN PARCIAL - Primera versión funcional del prototipo
+==============================================================
+
+INTEGRANTES DEL GRUPO:
+  1. Sharick De Las Aguas  - Analista
+  2. Valerin Cárdenas      - Datos (DBMS)
+  3. Martín Simarra        - Desarrollador
+  4. José Colón            - Soporte TI
+
+ENTREGA DE: [Nombre del integrante] - [Rol]
+
+DESCRIPCIÓN DEL SISTEMA INTELIGENTE:
+CertiBot automatiza la solicitud de certificados académicos
+(notas, estudio, matrícula, paz y salvo). Hoy el estudiante
+sube su recibo de pago y espera hasta 15 días hábiles porque
+la validación es manual. CertiBot usa Inteligencia Artificial
+(lectura del recibo + clasificador de Machine Learning TF-IDF +
+Regresión Logística) para leer el recibo, extraer la referencia
+y el valor pagado, y verificar que es un recibo real. Luego, un
+motor de reglas automáticas concilia el pago con la base de
+datos y, si todo coincide, genera al instante el certificado en
+PDF con código QR de verificación. Si la IA tiene baja
+confianza, la solicitud pasa a revisión humana.
+Resultado: de 15 días hábiles a menos de 2 minutos.
+
+PROTOTIPO: aplicación web en React + TypeScript + Tailwind +
+shadcn/ui + Zustand, con arquitectura Repository. Funciona en
+el navegador; el OCR y la base de datos están simulados.
+
+EJECUCIÓN: ver README.md (npm install && npm run dev,
+luego abrir http://localhost:5173)
+==============================================================
